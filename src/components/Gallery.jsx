@@ -11,7 +11,7 @@ function Gallery({ tours, setTours, onRemove }) {
         setLoading(true); // sets the loading state to true
         setError(false); // Resets the error state to false
         try {  // Use useEffect to call the API 
-            const res = await fetch('https://course-api.com/react-tours-project');
+            const res = await fetch("https://api.allorigins.win/raw?url=https://course-api.com/react-tours-project"); // CORS Error workaround :(
             const data = await res.json();
             setTours(data); // Stores the data in useState
         } catch (err) {
