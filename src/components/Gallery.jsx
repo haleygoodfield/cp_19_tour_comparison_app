@@ -25,7 +25,7 @@ function Gallery({ tours, setTours, onRemove }) {
     fetchTours();
   }, []); // runs once on mount 
 
-    if (loading) return <p>Loading the tours</p>; // displays loading message
+    if (loading) return <p>Loading the tours...</p>; // displays loading message
     if (error) return <p>Failed to load the tours</p>; // displays error message if failed 
 
     return (
