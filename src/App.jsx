@@ -1,7 +1,7 @@
 // App.jsx (Root Component)
 
-import React, { useState } from 'react';
-import Gallery from './components/Gallery';
+import React, { useState } from 'react'; // Import React and useState
+import Gallery from './components/Gallery'; // Import Gallery component
 
 // Holds state for the tours
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   // Handler function to remove a tour (passed down)
   const removeTour = (id) => {
-    setTours(prev => prev.filter(tour => tour.id !== id));
+    setTours(prev => prev.filter(tour => tour.id !== id)); // Filters out the tour with the given id
 };
 
 return (
@@ -23,6 +23,6 @@ return (
       );
   }
 
+// Exporting the App component as default
 export default App;
 
-// need to set up routing??? IDK 
