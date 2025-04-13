@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import TourCard from './TourCard';
+import React, { useEffect, useState } from 'react'; // Import React 
+import TourCard from './TourCard'; // Import TourCard component 
 
 function Gallery({ tours, setTours, onRemove }) {
   const [loading, setLoading] = useState(true); // stores the loading state
@@ -28,6 +28,16 @@ function Gallery({ tours, setTours, onRemove }) {
     if (loading) return <p>Loading the tours...</p>; // displays loading message
     if (error) return <p>Failed to load the tours</p>; // displays error message if failed 
 
+    // If all the tours are removed, displays a message
+    if (tours.length === 0 && !loading && !error) { // displays message if no tours are left
+        return (
+        <div className="no-tours">
+            <h2> We're Sorry! Please stay tuned for more tours.</h2> 
+            </div>
+        );
+    }
+
+    // If tours are available, render the gallery
     return (
         <section className="gallery">
             {/* Render each tour using map() with a unique key prop */}
@@ -38,4 +48,4 @@ function Gallery({ tours, setTours, onRemove }) {
     );
 }
 
-export default Gallery;
+export default Gallery; // Exporting the Gallery component
