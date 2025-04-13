@@ -5,9 +5,12 @@ This is my nineteenth coding project, where I have developed a **tour comparison
 - Remove tours with a “Not Interested” button
 - See a message when no tours are left
 
-## Built with React, Vite, and custom CSS. 
+### Built With
+-React & Vite
+-useState & useEffect
+-CSS 
 
-## To Run It
+### To Run It
 1. Open terminal
 2. Run "npm install"
 3. Then, Run "npm run dev"
