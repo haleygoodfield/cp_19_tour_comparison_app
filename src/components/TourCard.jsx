@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React 
 
 // Receives props for: id, name, info, price, image and callback onRemove 
 function TourCard({ id, name, info, image, price, onRemove }) {
@@ -20,4 +20,4 @@ function TourCard({ id, name, info, image, price, onRemove }) {
     );
 }
 
-export default TourCard;
+export default TourCard; // Exporting the TourCard component
