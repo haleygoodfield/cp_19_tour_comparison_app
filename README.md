@@ -1,4 +1,5 @@
 # Tour Comparison App 
+### Project Overview
 This is my nineteenth coding project, where I have developed a **tour comparison app** that allows you to: 
 - View tour details (name, price, image, description)
 - Toggle “Read More” for longer info
@@ -6,9 +7,9 @@ This is my nineteenth coding project, where I have developed a **tour comparison
 - See a message when no tours are left
 
 ### Built With
--React & Vite
--useState & useEffect
--CSS 
+- React & Vite
+- useState & useEffect
+- CSS 
 
 ### To Run It
 1. Open terminal
